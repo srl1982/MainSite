@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none;
+        }
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content{
+            position: absolute;
+            min-width: 160px;
+            background-color: #f9f9f9;
+            display: none;
+        }
+        .dropdown-content a{
+            display: block;
+            padding:12px  16px;
+            color:black;
+
+        }
+        .dropdown-content a:hover{
+            background-color: #f1f1f1;
+        }
+        .dropbutton{
+            background-color: green;
+            min-width: 160px;
+            color:white;
+            padding:16px;
+            border:none;
+            cursor: crosshair;
+            font-weight: bold;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li><a href="#Search">Search</a></li>
+    </ul>
+
+    <div class="dropdown">
+        <button class="dropbutton">Hover on me!</button>
+        <div class="dropdown-content">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#Contact">Contact</a>
+            <a href="#Search">Search</a>
+        </div>
+
+    </div>
+</body>
+</html>

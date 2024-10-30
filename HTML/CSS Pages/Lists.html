@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .soda{
+            color:blueviolet;
+            list-style: none;
+        }
+        .soda::before{
+            max-height: 10px;
+            background-image: url(/Images/soda.png);
+        }
+        ol li{
+            list-style: none;
+        }
+
+        ol li::after{
+            background:  url("/Images/soda.png");
+            content: "";
+            height: 10px;
+            display: inline-block;
+            margin-right: 5px;
+            z-index: 10;
+            background-position: center;
+            vertical-align: middle;
+                }
+    </style>
+</head>
+<body>
+    <h1>Sodas:</h1>
+    <ul class="soda">
+        <li><img src="/Images/soda.png" style="margin-right:20px;max-height:10px;max-height: 10px; display: inline;">Pepsi</li>
+        <li><img src="/Images/soda.png" style="margin-right:20px;max-height:10px;max-height: 10px; display: inline;">Coca Cola</li>
+        <li><img src="/Images/soda.png" style="margin-right:20px;max-height:10px;max-height: 10px; display: inline;">Dr. Pepper</li>
+    </ul>
+    <h1>Operating Systems</h1>
+    <ol>
+        <li>Windows</li>
+        <li>OSX</li>
+        <li>Linux</li>
+    </ol>
+</body>
+</html>

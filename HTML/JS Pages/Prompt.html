@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Prompt</h1>
+
+    <div >
+        <p id="messageId"></p>
+    </div>
+</body>
+<script>
+    var message = prompt("Hi! How are you feeling?");
+    console.log(message);
+    var el = document.getElementById("messageId");
+    el.innerHTML = message;
+</script>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            background: black;
+            border: 5px solid orange;
+            width: 500px;
+            height: 500px;
+            /* margin:0 auto;
+            position: relative; */
+            position: absolute;
+            left:50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+        }
+        .child{
+            position: relative;
+            background:grey;
+            width: 200px;
+            height: 200px;
+            border: 1px solid white;
+            left:50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="parent" style="color: white;">
+        <div class="child">Box1</div>
+    </div>
+</body>
+</html>

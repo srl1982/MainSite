@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{float: right; height: 200px; width: 200px;}
+        div{border: 3px solid green;}
+        .clearfix::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <h2>Without clearfix</h2>
+
+    <div>
+        <img src="/Images/IterationControl.png">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+    </div>
+    
+    <h2 style="margin-top: 200px;">With clearfix</h2>
+    <div class="clearfix">
+        <img src="/Images/IterationControl.png">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+    </div>
+</body>
+</html>
